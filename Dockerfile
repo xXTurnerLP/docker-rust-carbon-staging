@@ -22,7 +22,7 @@
 
 FROM		--platform=$TARGETOS/$TARGETARCH debian:bookworm-slim
 
-LABEL		org.opencontainers.image.source="https://github.com/xXTurnerLP/docker-rust-carbon"
+LABEL		org.opencontainers.image.source="https://github.com/xXTurnerLP/docker-rust-carbon-staging"
 
 ENV			DEBIAN_FRONTEND=noninteractive
 

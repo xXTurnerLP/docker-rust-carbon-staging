@@ -15,9 +15,9 @@ if [[ "${STEAMCMD_UPDATE_SERVER}" == "1" ]]; then
 	rm -rf /home/container/steamapps
 
 	if [[ "${VALIDATE_SERVER_FILES}" == "1" ]]; then
-		./steamcmd/steamcmd.sh +force_install_dir /home/container +login anonymous +app_update 258550 validate +quit
+		./steamcmd/steamcmd.sh +force_install_dir /home/container +login anonymous +app_update 258550 validate -beta staging +quit
 	else
-		./steamcmd/steamcmd.sh +force_install_dir /home/container +login anonymous +app_update 258550 +quit
+		./steamcmd/steamcmd.sh +force_install_dir /home/container +login anonymous +app_update 258550 -beta staging +quit
 	fi
 fi
 

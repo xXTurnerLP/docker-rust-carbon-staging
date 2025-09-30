@@ -5,7 +5,7 @@ on:
 
 jobs:
   push:
-    name: "docker-rust-carbon:latest"
+    name: "docker-rust-carbon-staging:latest"
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -27,4 +27,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/xxturnerlp/docker-rust-carbon:latest
+            ghcr.io/xxturnerlp/docker-rust-carbon-staging:latest
