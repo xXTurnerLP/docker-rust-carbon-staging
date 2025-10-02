@@ -21,8 +21,8 @@ if [[ "${STEAMCMD_UPDATE_SERVER}" == "1" ]]; then
 	fi
 fi
 
-# Update carbon (uses carbon production)
-curl -sSL "https://github.com/CarbonCommunity/Carbon/releases/download/production_build/Carbon.Linux.Release.tar.gz" | tar zx
+# Update carbon (uses carbon staging)
+curl -sSL "https://github.com/CarbonCommunity/Carbon/releases/download/rustbeta_staging_build/Carbon.Linux.Debug.tar.gz" | tar zx
 
 # Copy harmony mod to fix the stdin
 mkdir -p HarmonyMods
